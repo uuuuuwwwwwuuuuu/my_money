@@ -1,0 +1,13 @@
+@import '../../constants';
+
+body {
+    background-color: $bgMain;
+}
+
+span, p {
+    color: $text;
+}
+
+.app {
+    width: 100%;
+}
