@@ -1,16 +1,6 @@
-export default interface ITheme {
-    accent: string,
-    dimAccent: string,
-    btnAccent: string,
-    error: string,
-    success: string,
-    bgMain: string,
-    bgSecond: string,
-    text: string,
-    disable: string
-}
+import { DefaultTheme } from "styled-components"
 
-export const baseTheme: ITheme = {
+export const baseTheme: DefaultTheme = {
     accent: '#2ED9E5',
     dimAccent: '#1F9199',
     btnAccent: '#29C1CC',

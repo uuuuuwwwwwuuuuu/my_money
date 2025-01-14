@@ -10,8 +10,7 @@ const Header = styled.div`
     span {
         font-family: 'Shantell Sans';
         font-weight: 900;
-        margin: 10px;
-        margin-left: 20px;
+        margin-bottom: 20px;
     }
 `;
 

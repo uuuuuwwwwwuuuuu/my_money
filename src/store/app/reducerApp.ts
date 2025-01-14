@@ -15,4 +15,4 @@ const appReducer = createReducer(initialState, (builder) => {
     })
 })
 
-export default appReducer
+export default appReducer;
