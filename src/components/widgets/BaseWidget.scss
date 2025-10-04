@@ -1,7 +1,59 @@
+@import '../../constants';
+
 .progress_bar {
-    transform: rotate(270deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    height: 210px;
+    width: 210px;
+    border: 20px solid $dimAccent;
+    border-radius: 100%;
+    box-sizing: border-box;
+
+    svg {
+        position: relative;
+        left: -20px;
+        top: -20px;
+    }
+}
+
+.progress_bar_wrapper {
+    position: relative;
+}
+
+.progress_widget_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress_widget_right {
+    max-width: 350px;
+    min-width: 350px;
+    background-color: $bgMain;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: scroll;
+
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            display: block;
+        }
+    }
+
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    span {
+        font-size: 1.6rem;
+        font-weight: 500;
+
+    }
 }
