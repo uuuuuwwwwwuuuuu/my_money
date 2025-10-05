@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { useTheme } from 'styled-components';
-import './BaseWidget.scss';
+import './ProgressWidget.scss';
 
 const WidgetBody = styled.div`
-    height: 350px;
+    height: 100%;
     background-color: ${({ theme }) => theme.bgSecond};
     border-radius: 15px;
     padding: 30px 40px;
-    max-width: 800px;
+    flex: 0 1 850px;
     display: flex;
     justify-content: space-between;
 `;
@@ -91,7 +91,7 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
     );
 };
 
-const BaseWidget: FC = () => {
+const ProgressWidget: FC = () => {
     const theme = useTheme();
     const circularProgressSize = 210;
 
@@ -146,4 +146,4 @@ interface CircularProgressProps {
     progressColor?: string; // Цвет прогресса
 }
 
-export default BaseWidget;
+export default ProgressWidget;

@@ -1,0 +1,15 @@
+.top_widgets_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+}
+
+.right_top_widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    height: 100%;
+    flex: 1 0;
+}

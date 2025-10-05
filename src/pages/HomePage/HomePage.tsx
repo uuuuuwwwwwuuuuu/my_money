@@ -1,13 +1,19 @@
 import Headers from "../../components/headers";
-import BaseWidget from "../../components/widgets/BaseWidget";
+import PaymentWidget from "../../components/widgets/PaymentWidget/PaymantWidget";
+import ProgressWidget from "../../components/widgets/ProgressWidget/ProgressWidget";
 import "./HomePage.scss";
-import React from "react";
 
 function HomePage() {
     return (
         <>
             <Headers title="Мои деньги" />
-            <BaseWidget />
+            <div className="top_widgets_wrapper">
+                <ProgressWidget />
+                <div className="right_top_widgets">
+                    <PaymentWidget textColor='error'>Прогнозируемые расходы</PaymentWidget>
+                    <PaymentWidget textColor='accent'>Прогнозируемый доход</PaymentWidget>
+                </div>
+            </div>
         </>
     );
 }

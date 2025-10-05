@@ -1,4 +1,4 @@
-@import '../../constants';
+@import '../../../constants';
 
 .progress_bar {
     position: relative;
@@ -28,7 +28,8 @@
 
 .progress_widget_right {
     max-width: 350px;
-    min-width: 350px;
+    width: 350px;
+    min-width: 250px;
     background-color: $bgMain;
     border-radius: 10px;
     padding: 20px;
