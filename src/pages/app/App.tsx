@@ -25,7 +25,7 @@ function App() {
 
     return (
         <ThemeProvider theme={baseTheme}>
-            <div className="app">
+            <div className="app_wrapper">
                 <HomePage />
             </div>
         </ThemeProvider>

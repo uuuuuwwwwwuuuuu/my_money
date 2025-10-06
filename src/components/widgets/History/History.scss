@@ -1,0 +1,33 @@
+@import '../../../constants';
+
+.history_widget {
+    background-color: $bgSecond;
+    flex: 0 1 450px;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    li>span {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+.history_more_info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $accent;
+    }
+}

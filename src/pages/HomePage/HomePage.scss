@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     height: 350px;
+
+    margin-bottom: 20px;
 }
 
 .right_top_widgets {
@@ -12,4 +14,16 @@
     margin-left: 20px;
     height: 100%;
     flex: 1 0;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bottom_widgets_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 350px;
 }

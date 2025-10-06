@@ -94,6 +94,7 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
 const ProgressWidget: FC = () => {
     const theme = useTheme();
     const circularProgressSize = 210;
+    const parentageValue = 90;
 
     return (
         <WidgetBody>
@@ -101,10 +102,10 @@ const ProgressWidget: FC = () => {
                 <div className="progress_bar_wrapper">
                     <CircularProgress
                         progressColor={theme.accent}
-                        value={50}
+                        value={parentageValue}
                         size={circularProgressSize}
                     />
-                    <PercentageValue circularProgressSize={circularProgressSize}>38%</PercentageValue>
+                    <PercentageValue circularProgressSize={circularProgressSize}>{parentageValue+'%'}</PercentageValue>
                 </div>
                 <InfoWrapper>
                     <Info>
